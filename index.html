@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Audio Experience Design</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <link rel="stylesheet" href="stylesheet.css">
+</head>
+<body id="body">
+    <div id="map"></div>
+    <div id="location"></div>
+    <div id="coordinates">
+        <div class="container">
+            <div id="weatherDataUI">
+                <span id="latlon"></span>
+                <div id="fullweatherdata"></div>
+            </div>
+            <div id="fullscreenButton">&#128421;</div>
+        </div>
+    </div>
+    <div id="centre" class="centrepoint"></div>
+    <div id="centre2" class="centrepoint"></div>
+    <div id="timeslidercontainer">
+        <div class="container">
+            <input type="range" min="0" max="365" value="0" class="slider" id="timeSlider">
+            <p id="timeicon">&#8987;</p>
+        </div>
+    </div>
+
+    
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Turf.js/6.5.0/turf.min.js"></script>
+    <script src="map.js"></script>
+    <script src="beautifyData.js"></script>
+    <script src="countries.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
